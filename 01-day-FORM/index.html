@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Here are html forms -->
+   <form >
+
+    <!-- we used div for spacing because its a block element -->
+   
+    <div>
+    <label for="firtsname">First Name : </label>
+    <input type="text"id="firtsname">
+    </div>
+
+    <div>
+        <label for="lastsname">Last Name : </label>
+        <input type="text"id="lastsname">
+    </div>
+
+    <div>
+        <label for="email">Email : </label>
+        <input type="text"id="email">
+    </div>
+
+<div>
+        <label for="password">Password : </label>
+        <input type="text"id="password">
+    </div>
+
+   
+   
+    <!-- Check box -->
+
+<div>
+    <label for="">Select your favourite subject  :   </label>
+
+<label for="physics">Physics </label>
+<input type="checkbox" name="Physics" id="physics">
+
+<label for="Computer">Computer </label>
+<input type="checkbox" name="Computer" id="Computer">
+
+<label for="Chemistry">Chemistry </label>
+<input type="checkbox" name="Chemistry" id="Chemistry">
+
+<label for="english">English  </label>
+<input type="checkbox" name="English" id="english">
+</div>
+    <!-- for radio button -->
+
+<div>
+<label for="gender">Select your Gender : </label>
+
+<label for="male">Male  </label>
+<input type="radio" name="gender" id="male">
+<label for="female">Female  </label>
+<input type="radio" name="gender" id="female">
+</div>
+
+
+<!-- for comments or discription  -->
+<Label for="">Share your views :  </Label>
+<textarea name="dj" id="" cols="30" rows="10">Your views : </textarea>
+
+<!-- simple  date -->
+<div>
+<Label for="date">Enter date :  </Label>
+<input type="datetime" name="" id="date">
+</div>
+
+<!-- for local date and time -->
+<div>
+    <Label for="date">Enter date and time :  </Label>
+  <input type="datetime-local" name="" id="date">
+    </div>
+
+<!-- </form> -->
+<form >
+    <label for="">Your list : </label>
+    <input list="Subjects">
+    <datalist id="Subjects">
+      <option value="Computer">
+      <option value="Physics">
+      <option value="Chemistry">
+      <option value="English">
+      <option value="Biology">
+    </datalist>
+  </form>
+
+
+<div>
+    <input type="submit" value="submit">
+  <input type="Reset" value="Reset" >
+</div>
+</form>
+</body>
+</html>
