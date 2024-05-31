@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: calc(10px+vmin);
+}
+
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://guidehouse.com/-/media/new-library/corporate/homepage/images/2024/hero-carousel/desktop-1440x920/mountain-biker_04-24_1440x920.ashx?h=920&w=1440&la=en&hash=8BA3D6C5D06F493E73C0D880D2098E30");
+  /* background: no-repeat; */
+  background-size: cover;
+  overflow: hidden;
+}
+
+body{
+  overflow: hidden;
+  width: 100%;
+
+}
+
+nav{
+  position:absolute;
+  top: 0;
+  display: flex;
+width: 100%;
+/* left: 50px;
+right: 50px; */
+justify-content: space-between;
+color: white;
+background-color: black;
+height: 40px;
+/* align-items: center; */
+}
+
+.nevigation-menu{
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  left: 50px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.menu{
+  display: flex;
+  gap: 1rem;
+}
+
+.icons{
+  display: flex;
+  gap: 1.3rem;
+  /* background-color: brown ; */
+  align-items: center;
+}
+
+.nav menu{
+  display: flex;
+  gap: 10px;
+}
+header div.cta-btn button{
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  bottom: 2rem;
+  gap: 1rem;
+background: rgb(255, 255, 255);
+}
+/* header div.cta-btn button:hover{
+  background: rgb(16, 15, 15);
+  color: white;
+} */
+header div.cta-btn button:visited{
+  background-color: rgb(230, 24, 24);
+  color: rgb(116, 36, 36);
+}
