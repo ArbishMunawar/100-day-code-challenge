@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button{
+text-decoration: none;
+outline: none;
+display: inline-block;
+border: none;
+}
+
+.card-wrapper{
+  height: 400px;
+  width: 450px;
+/* background-color: rgb(38, 84, 147);  */
+padding: 22px;
+  display: flex;
+  flex-direction: column;
+  background: #ebedee;
+  border-radius: 6px;
+
+} 
+
+
+p{
+  margin-top: 12px;
+  display: inline-block;
+}
+
+
+.image-wrap{
+  height: 160px;
+align-items: center;
+display: flex;                 /*  flex moved the image to the top */
+margin-top: 20px; 
+position: relative;
+/* background-color: brown; */
+}
+
+img{
+  width: 85%;
+  display: block;             /*  center the image horizontally */
+ margin: 0 auto;               /* auto divided the width both sides equally*/
+}
+
+/* Buttons */
+
+.footer{
+  /* background-color: pink; */
+  flex-grow: 1;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 30px; */
+}
+
+.footer div.buttons {
+/* background-color: aqua;  */                 
+display: flex;
+gap: 1rem;
+} 
+
+.footer div.buttons button.learn{
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 5px;
+  border:none;
+  text-decoration: underline;
+}
+
+.footer div.buttons button.buy{
+  border-radius: 17px;
+  padding: 12px 16px;
+  border: none;
+  background-color: white;
+
+}
+
+.footer div.buttons button.buy:hover{
+  background-color: black;
+  color: white;
+} 
+
+
+
+
