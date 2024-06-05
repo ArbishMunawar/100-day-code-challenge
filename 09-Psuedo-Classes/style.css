@@ -1,0 +1,32 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+color: white;
+}
+/* linked class */
+a:link {
+  margin: 6rem 8rem;
+  display: inline-block;
+  font-size:2rem;
+  padding: 10px 20px;
+  background-color: rgb(24, 57, 177);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+}
+
+a:hover {
+  background-color: rgb(21, 166, 214);
+}
+
+a:active{
+  background-color: brown;
+}
+
+/* a:visited{
+ background-color: aqua;
+} */
