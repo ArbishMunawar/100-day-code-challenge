@@ -13,14 +13,14 @@ a:link {
   display: inline-block;
   font-size:2rem;
   padding: 10px 20px;
-  background-color: rgb(24, 57, 177);
+  background-color: rgb(40, 143, 6);
   text-decoration: none;
   color: rgb(255, 255, 255);
 
 }
 
 a:hover {
-  background-color: rgb(21, 166, 214);
+  background-color: rgb(221, 221, 22);
 }
 
 a:active{
