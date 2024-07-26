@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: calc(10px + 1vmin);
+}
+:root{
+  --color1: #9b5de5;
+  --color2: #f15bb5;
+  --color3: #fee440;
+  --color4: #70d6ff;
+  --color5: #b23a48; 
+}
+main{
+  position: relative;
+  height: 100vh;
+  display: flex;
+/* background-color: rgb(226, 221, 215); */
+}
+h2{
+margin-top: 1rem;
+text-decoration: underline;
+margin-left: 32rem;
+font-size: 2.5rem;
+}
+
+.wrapper{
+  /* background-color: #00f5d4; */
+  height: 7rem;
+  width: 20rem;
+  /* border: 1px solid black; */
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  overflow: hidden;
+}
+
+.div{
+  /* background-color: blueviolet; */
+  height: 7rem;
+  width: 7rem;
+ position: relative;
+}
+
+.wrapper :nth-child(1){
+  background-color: var(--color1);
+}
+
+.wrapper :nth-child(2){
+  background-color: var(--color2);
+}
+
+.wrapper :nth-child(3){
+  background-color: var(--color3);
+}
+
+.wrapper :nth-child(4){
+  background-color: var(--color4);
+}
+
+.wrapper :nth-child(5){
+  background-color: var(--color5);
+}
+
+.wrapper div:hover{
+  width: 20rem;
+  flex-grow: 4;
+  transition-duration: 0.5s;
+}
+
+/* --.wrapper > div::after--  we can also use this. It also shows all the child divs   */
+.wrapper div::after {
+  content: "9b5de5";
+  position: absolute;
+  transform: translate(-50%,-50%);   /*Align text in center from both sides*/
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  color: black;
+  opacity: 0;
+}
+
+.wrapper div:hover::after {
+  opacity: 1;
+}
+/* 
+.wrapper :nth-child(2)::after {
+  content: "f15bb5";
+  position: absolute;
+  transform: translate(-50%,-50%);   
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  color: black;
+  opacity: 0; 
+}
+
+.wrapper :nth-child(3)::after {
+  content: "fee440";
+  position: absolute;
+  transform: translate(-50%,-50%);   
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  color: black;
+  opacity: 0; 
+}
+
+.wrapper :nth-child(4)::after {
+  content: "70d6ff";
+  position: absolute;
+  transform: translate(-50%,-50%);   
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  color: black;
+  opacity: 0; 
+}
+
+.wrapper :nth-child(5)::after {
+  content: "b23a48";
+  position: absolute;
+  transform: translate(-50%,-50%);   
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  color: black;
+  opacity: 0; 
+} */
+
+
