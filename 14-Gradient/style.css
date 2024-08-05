@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0055;
+    --color4: #9e0059;
+    --color5: #380099f7;
+  }
+  
+  html {
+    font-size: calc(10px + 1vmin);
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  span.tooltip {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: var(--color5);
+    border-radius: 10px;
+    /* position: absolute; */
+    text-wrap: nowrap;
+    color: white;
+  }
+  
+  div.triangle-wrapper {
+   
+    /* background-color: green; */
+    position: relative;
+ 
+    /* top: 10px; */
+    /* transform: translate(-25%);  */
+    margin-right: 70px;
+/* left: 45%;
+    top: 10%;*/   
+  }
+  
+  span.triangle {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    rotate: 135deg;
+    background: linear-gradient(45deg, transparent 50%, #380099f6 50%);
+    /* bottom: 20%; */
+    /* top: 40%; */
+    /* left: 50%; */
+    right: 10%;
+    margin-top: -30px;
+    /* transform: translate(-80%); */
+}
