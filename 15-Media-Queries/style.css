@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  :root {
+    --color1: #ffbd00;
+    --color2: #ff5400;
+    --color3: #ff0055;
+    --color4: #9e0059;
+    --color5: #380099f7;
+  }
+  
+  html {
+    font-size: calc(10px + 1vmin);
+  }
+  body{
+    background-color: aqua;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body{
+        background-color: #ff0055;
+    }
+  } 
+
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    body{
+        background-color: blue;
+    }
+  } 
+  
+  @media screen and (min-width: 800px) and (max-width: 1200px){
+    body{
+        background-color: green;
+    }
+  } 
+
+  @media print{
+    body{
+      font-size: 25px;
+      color: rgb(0, 255, 255);
+    
+    }
+  }
+/* 
+  @media speech{
+    body{
+     background-color: blueviolet;
+    }
+  }  */
