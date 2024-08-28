@@ -1,0 +1,112 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root{
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+.card{
+  height: 350px;
+  width: 300px;
+  /* border-radius: 50%; */
+  /* background-color: #fed800; */
+position: absolute;
+border-radius: 10px;
+/* border: 1px solid black;  */
+box-shadow: 0 0 10px 3px #68625f82;
+}
+
+.layer{
+height: 100px;
+width: 100px;
+border-radius: 84% 16% 40% 60% / 62% 39% 61% 38%  ;
+background-color: #b5838d;
+position: absolute;
+/* border: 2px solid black; */
+}
+
+.second{
+  color: aliceblue;
+  /* position: relative; */
+   /* background-color: #9e005a55; */
+}
+
+.first{
+  /* position: absolute; */
+  -webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+/* backdrop-filter: contrast(); */
+ /* opacity: 100px; */
+  background-color: #ffcdb25d;
+}
+
+.layer1{
+  bottom:300px;
+  animation:layer1 1.5s infinite alternate-reverse ;
+}
+
+.layer2{
+  top: 0px;
+left: 250px;
+animation:layer2 1.5s infinite alternate-reverse ;
+}
+
+.layer3{
+ top: 300px;
+ right: 0px;
+  animation:layer3 1.5s infinite alternate-reverse ;
+}
+
+.layer4{
+bottom: 0px;
+right: 250px;
+animation:layer4 1.5s infinite alternate-reverse ;
+}
+
+@keyframes layer1{
+to{
+bottom: -50px;
+} 
+}
+
+@keyframes layer2{
+to{
+
+ left: -50px;
+}  
+}
+
+@keyframes layer3{
+ to{
+ top: -50px;
+ }
+}
+
+@keyframes layer4{
+ to{
+ right: -50px;
+ }  
+ }
