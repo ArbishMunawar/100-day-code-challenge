@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+  --color6: green;
+  --color7: pink;
+  --color8: purple;
+  --color9: #386641;
+  --color10: #a7c957;
+}
+
+
+@property --angle1 {
+  initial-value: 0deg;
+  syntax: "<angle>";
+  inherits: true;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.box {
+  height: 20rem;
+  width: 20rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.box1 {
+  background: repeating-linear-gradient(to bottom right,
+      var(--color4) 0px 30px,
+      var(--color2) 30px 60px,
+      var(--color6) 60px 90px);
+  /* transition: all 2s ease-in; */
+}
+
+.box1:hover {
+  background: repeating-linear-gradient(to left,
+      var(--color1) 0px 30px,
+      var(--color2) 30px 60px,
+      var(--color6) 60px 90px);
+}
+
+.box2 {
+  background: radial-gradient(circle at center, var(--color3) 20%,
+      var(--color1)40%, var(--color7) 70%);
+
+}
+
+.box2:hover {
+  background: radial-gradient(circle at top left, var(--color3) 20%,
+      var(--color1)40%, var(--color7) 70%);
+}
+
+.box-wrapper {
+  overflow: hidden;
+}
+
+.box3 {
+  background: repeating-conic-gradient(from var(--angle1),
+      var(--color9) 0deg 10deg,
+      var(--color10) 10deg 20deg
+      /* white 20deg 30deg */
+    );
+  border: none;
+  /* animation: rotate 4s linear infinite; */
+}
+
+.box3:hover {
+  background: repeating-conic-gradient(at top left,
+      var(--color9) 0deg 10deg,
+      var(--color10) 10deg 20deg
+      /* white 20deg 30deg */
+    );
+  animation: rotate 4s linear infinite;
+  /* transform: translate(-50%, -50%); */
+  animation: move 2s;
+
+}
+
+@keyframes rotate {
+  to {
+    --angle1: 360deg;
+  }
+}
+
+
+/* @keyframes move {
+  50% {
+    transform: translate(-25%, -20%);
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(3600deg);
+    transform: translate(-15%, 0%);
+
+
+  } */
+
+  /* 60%{
+  transform: rotate(270deg);
+}
+80%{
+  transform: rotate(360deg);
+
+} */
