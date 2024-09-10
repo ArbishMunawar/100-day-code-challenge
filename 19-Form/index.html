@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta title="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-Form-2</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <main>
+
+    <form>
+      <!-- 1st -->
+      <div class="container">
+
+        <div class="wrapper">
+          <label for="title">Course Title:</label>
+          <input type="text" id="title" placeholder="Enter Course Title">
+        </div>
+
+        <div class="wrapper">
+          <label for="slug">Course Slug:</label>
+          <input type="text" id="slug" placeholder="Enter Course Slug">
+        </div>
+      </div>
+
+      <!-- 2nd -->
+      <div class="container">
+
+        <div class="wrapper">
+          <label class="required" for="abstract">Course Abstract:</label>
+          <textarea type="text" id="abstract" rows="5" placeholder="Enter Course Abstract"></textarea>
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="description">Course Description:</label>
+
+          <textarea type="text" id="description" rows="5" placeholder="Enter Course Description"></textarea>
+        </div>
+      </div>
+
+      <!-- 3rd -->
+      <div class="container">
+
+        <div class="wrapper">
+          <label class="required" for="syllabus">Course Syllabus:</label>
+          <textarea type="text" id="syllabus" rows="5" placeholder="Enter Course Syllabus"></textarea>
+        </div>
+
+        <div class="wrapper">
+          <label for="learn">Course:</label>
+          <textarea type="text" id="learn" rows="5" placeholder="What will you learn?"></textarea>
+        </div>
+      </div>
+
+      <!-- 4th -->
+
+      <div class="container">
+
+        <div class="wrapper">
+          <label class="required" for="teacher">Course Teacher:</label>
+          <!-- <input type="text"id="teacher" placeholder="Select teacher"> -->
+          <select id="teacher" name="teacher" placeholder="Select Teacher">
+            <option value="" disable selected hidden>Select Teacher</option>
+            <option value="1">Laiba</option>
+            <option value="2">Hira</option>
+            <option value="3">Ahmad</option>
+            <option value="4">Ali</option>
+          </select>
+        </div>
+
+        <div class="wrapper">
+          <label for="fee">Fee Per Month:</label>
+          <input type="text" id="fee" placeholder="0">
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="seats">Available Seats:</label>
+          <input type="text" id="seats" placeholder="Enter Total Seats">
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="duration">Course duration:</label>
+          <input type="text" id="duration" placeholder="Enter Course duration">
+        </div>
+
+      </div>
+
+      <!-- 5th -->
+
+      <div class="container">
+
+        <div class="wrapper">
+          <label class="required" for="modality">Lectures:</label>
+          <input type="text" id="lectures" placeholder="0">
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="register">Register Before:</label>
+          <input type="date" id="register" placeholder="Enter Course Slug">
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="starting-date">Course Starting Date</label>
+          <input type="date" id="starting-date">
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="ending-date">Course Ending Date</label>
+          <input type="date" id="ending-date" placeholder="Enter Course ending-date">
+        </div>
+
+      </div>
+
+      <!-- 6th -->
+
+      <div class="container">
+
+        <div class="wrapper">
+          <label class="required" for="modality"> Modality:</label>
+          <select>
+            <option value="" disable selected hidden>Select Modality</option>
+            <option value="1">visual</option>
+            <option value="2">auditory</option>
+            <option value="3">kinesthetic</option>
+            <option value="4">tactile</option>
+          </select>
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="level"> Course level:</label>
+          <select>
+            <option value="" disable selected hidden>Select Modality</option>
+            <option value="1">visual</option>
+            <option value="2">auditory</option>
+            <option value="3">kinesthetic</option>
+            <option value="4">tactile</option>
+          </select>
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="admission">Admission:</label>
+          <select>
+            <option value="" disable selected hidden>Select Admission status</option>
+            <option value="1">visual</option>
+            <option value="2">auditory</option>
+            <option value="3">kinesthetic</option>
+            <option value="4">tactile</option>
+          </select>
+        </div>
+
+        <div class="wrapper">
+          <label class="required" for="course"> Course Status:</label>
+          <select>
+            <option value="" disable selected hidden>Select Course Status</option>
+            <option value="1">visual</option>
+            <option value="2">auditory</option>
+            <option value="3">kinesthetic</option>
+            <option value="4">tactile</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 7th -->
+
+      <div class="container">
+
+        <div class="wrapper">
+          <label class="required" for="file" placeholder="Choose image">Image:</label>
+          <input type="file" id="file">
+        </div>
+
+        <div class="wrapper">
+          <div class="btn btn-1">
+            <button class="select">Select File</button>
+            <button class="upload">Upload</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="wrapper">
+          <div class="btn btn-2">
+            <button>Upload</button>
+          </div>
+        </div> -->
+
+      <div class="container">
+        <div class="btn btn-2">
+          <button>Publish Course</button>
+        </div>
+      </div>
+    </form>

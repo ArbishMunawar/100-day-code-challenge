@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+:root {
+  --color1: #ffbd00;
+  --color2: #ff5400;
+  --color3: #ff0054;
+  --color4: #9e0059;
+  --color5: #390099;
+}
+
+html {
+  font-size: calc(10px + 1vmin);
+}
+
+main {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(227, 223, 223, 0.511);
+}
+
+form {
+  width: 42rem;
+  margin: 5rem 0;
+  /* border: 1px solid black; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px black;
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
+  /* gap: 1rem;
+  background-color: aquamarine; */
+  /* flex-wrap: wrap; */
+}
+
+.wrapper {
+  flex-grow: 1;
+  /* min-width: 8rem; */
+  width: 0;
+  /* background-color: #390099; */
+}
+
+input,
+label,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+.required::after {
+  content: " * ";
+  color: red;
+  font-size: 0.9rem;
+}
+
+input {
+  height: 2.2rem;
+  padding: 0.7rem;
+  margin-top: 0.2rem;
+  border-color: rgba(128, 128, 128, 0.479);
+  border-radius: 0.3rem;
+  outline-color: rgba(11, 80, 198, 0.968);
+  min-width: 8rem;
+  /* border-color: blue; */
+}
+
+textarea,
+input[type="file"] {
+  background-color: white;
+  padding: 0.7rem;
+  margin-top: 0.2rem;
+  border-color: rgba(128, 128, 128, 0.479);
+  border-radius: 0.3rem;
+  outline-color: rgba(11, 80, 198, 0.968);
+  resize: none;
+  border: 1px solid rgba(128, 128, 128, 0.479);
+
+  /* border: 2px rgba(128, 128, 128, 0.479) ; */
+}
+
+select {
+  width: 9.3rem;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border-color: rgba(128, 128, 128, 0.479);
+  border-radius: 0.3rem;
+  outline-color: rgba(11, 80, 198, 0.968);
+}
+
+::placeholder {
+  font-size: 0.8rem;
+}
+
+button {
+  /* display:block; */
+  text-decoration: none;
+  background-color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.2rem;
+  font-size: large;
+  border: none;
+  margin-top: 1.5rem;
+}
+
+.select {
+  background-color: black;
+  color: white;
+}
+
+.upload {
+  background-color: rgb(125, 124, 124);
+  color: white;
+}
+
+.btn-2 button {
+  display: block;
+  margin-top: 0;
+  background-color: #0b50c6f7;
+  color: white;
+}
